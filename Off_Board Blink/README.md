@@ -1,42 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This section required nothing extra, in terms of code, than succesfully completing the Multiple Blink section for the G2553. The reason for this is that once programmed, this board has a removable chip that be dropped into a breadboard and used stand alone. So, to do this lab, the chip was carefully removed and inserted into a breadboard. Then the physical connections were made using jumper wires. The purpose of this lab was emulate the two LEDs blinking at different rates on a bread using the programmable chip. The .gif file shows a video of this. 
 
 ## Original
 # Off Board Blink
