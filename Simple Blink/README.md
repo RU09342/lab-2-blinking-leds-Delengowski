@@ -1,3 +1,15 @@
+#Lab 2 Simple Blink Read Me
+
+## goals
+To drive an LED on each of the boards.
+## Code
+To program the boards to blink an LED, the pins which represent the LEDs must be set to output mode. This is done by performing a logical OR with the pin in question. For example on the FR6989, one of the LEDs is PORT 1.0. So to set this port to output mode, one would type "P1DIR |= BIT0;". What this does is OR the current value of the Port 1 Direction register with the value "00000001". The reason for the OR is that it will not change the values of the other bits, it only gurantees that BIT0 becomes a 1.  
+
+After the direction of the port is set, a forever loop is used to toggle the LED on and off, using a nested do while loop to cause delays(these delays control the frequency of the LED). To toggle the LED on and off, the XOR operator must be used. This is required because of the definition of XOR. It is best explained with the phrase "either or but neither both". If you XOR two values, as long as one of the is a 1 but not both of them, the resultant is a logical one. If both operands are the same, then the resultant is a 0. To toggle the LED of P1.0 on the FR6989, one would type "P1OUT ^= BIT0;". This causes the values of the port 1 output register to be XOR'd with 00000001, if the current value in the P1OUT register is 01000001 then the output will be 01000000. Or if the current value of the P1 output register was 11111110 and XOR'd with 00000001 then the resultant is 11111111.
+
+
+
+## original
 # Simple Blink
 For starters, you will need to blink one of the on-board LED's at a particular rate. It is up to you to determine what rate you want to blink it at, however it has to be symmetrical (50% Duty Cycle), meaning equal times on and off. You should attempt multiple different speeds before moving on to the next part of the lab.
 
