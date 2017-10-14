@@ -1,3 +1,14 @@
+# Lab 2 Multiple Blink
+## Goal
+To blink two LEDs at different rates 
+## Code
+To program the boards to do this is a simple extension of the Simple Blink section. After you have set up the direction ports for the LEDs, and created your forever loop to toggle the LEDs on and off. You merely add a second do while loop and toggle of one of the LEDs, after your first do while loop. This will cause both LEDs to turn on at the same time initially but then after the delay of the do while loop, the second LED turns back off, then when the forever loop restarts the switch. Its like this:
+
+start->LED1,2 ON->Do While->LED2 OFF->Do While->RESTART->LED1 OFF, LED2 ON->DO WHILE->LED2 OFF->DO WHILE->RESTART...
+
+
+
+## original
 # Multiple Blink
 Now that we have blinked at least 1 LED, what about blinking multiple LEDS at the same time? The minimum that you need to develop is blinking at least two LEDs at two different rates. Although I am not going to give you a speed, you should probably pick a rate which is visible to a standard human. I really hope that you take this further and perform some of the extra work for this part of the lab exercise.
 
