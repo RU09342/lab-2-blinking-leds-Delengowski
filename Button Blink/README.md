@@ -8,7 +8,7 @@ To code this requires some extra compared to the other sections. The extra is me
 
     {
 
-   if (!(BIT1 & P1IN)) //it is the negation because the switches are active high, we want a logical 1 when the button is giving a 0. 
+     if (!(BIT1 & P1IN)) //it is the negation because the switches are active high, we want a logical 1 when the button is giving a 0. 
   
      P1OUT |= BIT0; //turns LED ON
     
